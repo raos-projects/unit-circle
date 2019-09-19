@@ -6,10 +6,11 @@ import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.plaf.basic.*;
 /**
- * Write a description of class JContinuousButton here.
+ * A custom button that fires continuously as it is pressed. Was originally used
+ * to change the angle, however was dropped in favor of using a scrollbar instead.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Saieesh Rao
+ * @version 10/30/2011
  */
 public class JContinuousButton extends BasicArrowButton implements ActionListener
 {
