@@ -32,8 +32,6 @@ public class UnitCircleApp extends JFrame implements AdjustmentListener, ActionL
     //bottom panel values
     private JPanel valueComponents;
     private JScrollBar angleBar;
-    //     private JContinuousButton angleDecreaseButton;
-//     private JContinuousButton angleIncreaseButton;
     private JTextField angleText;
     private JTextField sinText;
     private JTextField cosText;
@@ -61,7 +59,6 @@ public class UnitCircleApp extends JFrame implements AdjustmentListener, ActionL
     private JMenu angleMenu;
     private JMenuItem setAngleItem;
     private JMenuItem viewTrigValuesItem;
-    //     private JCheckBoxMenuItem boundedRangeBox;
     private JMenu autocycleSubmenu;
     private JMenuItem autocycleItem;
     private JMenuItem autocycleStopItem;
@@ -102,7 +99,7 @@ public class UnitCircleApp extends JFrame implements AdjustmentListener, ActionL
         angle = 60;
         //set units to degrees
         angleUnit = DEGREE_SYMBOL;
-        //initaliza decimal formatter to permit 5 digits after the decimal point
+        //initialize decimal formatter to permit 5 digits after the decimal point
         df = new DecimalFormat("###.#####");
         //initialize autocycle bounds, autocycle repeats
         autocycleLower = 0;
@@ -337,8 +334,8 @@ public class UnitCircleApp extends JFrame implements AdjustmentListener, ActionL
         //make,add, and position the graphs in the JPanel
         uc = new UnitCircle(angle);
         tf = new TrigFuncs(angle);
-        graphPanel.add(uc);//, BorderLayout.LINE_START);
-        graphPanel.add(tf);//, BorderLayout.LINE_END);
+        graphPanel.add(uc);
+        graphPanel.add(tf);
         uc.setLocation(0,100);
         tf.setLocation(510,100);
         graphPanel.setLocation(0,100);
@@ -480,7 +477,6 @@ public class UnitCircleApp extends JFrame implements AdjustmentListener, ActionL
             uc.switchTangent();
             tf.switchTangent();
             cs.switchTangent();
-//             stf.switchTangent();
             tanBox.setSelected(uc.isTanOn());
             tanBoxMenu.setSelected(uc.isTanOn());
             repaint();
@@ -789,8 +785,6 @@ public class UnitCircleApp extends JFrame implements AdjustmentListener, ActionL
     }
     private void replaceAll(StringBuffer s, String key, String value, String unlessPrecededBy){
         int ind = 0;
-        //key = key.toUpperCase();
-        //value = value.toUpperCase();
         while(ind < s.length()-key.length()){
             if(s.substring(ind,ind+key.length()).equals(key)){
                 String preceding = s.substring(ind-unlessPrecededBy.length(),ind);
