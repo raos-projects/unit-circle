@@ -5,10 +5,12 @@ import java.awt.geom.*;
 import javax.swing.*;
 
 /**
- * Write a description of class CartesianSpan here.
+ * A cartesian graph of the sine, cosine, and tangent functions at the top of the app.
+ * The graph has a domain between -720 and 720 degrees (-4pi to 4pi), which are the
+ * maximum bounds for the angle in the app.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Saieesh Rao
+ * @version 10/30/2011
  */
 public class CartesianSpan extends AngleGraph
 {
