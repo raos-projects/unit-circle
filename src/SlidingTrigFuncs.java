@@ -5,25 +5,16 @@ import java.awt.event.*;
 import java.awt.geom.*;
 import javax.swing.*;
 /**
- * Write a description of class SlidingTrigFuncs here.
+ * A version of TrigFuncs that was ultimately not implemented. Has no functional difference from TrigFuncs.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Saieesh Rao
+ * @version 10/30/2011
  */
 public class SlidingTrigFuncs extends TrigFuncs
 {
     public SlidingTrigFuncs(double angle){
         super(angle);
     }
-
-//     public void paint(Graphics g){
-//         if(isTanOn()){
-//             //paintSmall(g);
-//         }
-//         else{
-//             //paintLarge(g);
-//         }
-//     }
 
     public void paintLarge(Graphics g1){
         Graphics2D g = (Graphics2D)g1;
